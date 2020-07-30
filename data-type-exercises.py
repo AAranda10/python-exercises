@@ -177,13 +177,13 @@ True
 
 ###Coupon Scenario
 
-In [51]: standard_member = True                                                                                  
+In [51]: offer_good = True                                                                                  
 
 In [52]: bought_two_items = True                                                                                 
 
 In [53]: premium_member = False                                                                                  
 
-In [54]: can_apply_offer = (standard_member and bought_two_items) or premium_member                              
+In [54]: can_apply_offer = bought_two_items and (offer_good or premium_member)                              
 
 In [55]: print(can_apply_offer)                                                                                  
 True
@@ -194,17 +194,17 @@ In [70]: username = 'codeup'
 
 In [71]: password = 'notastrongpassword'                                                                         
 
-In [72]: len(username) > 5                                                                                       
+In [72]: len(password) > 5                                                                                       
 Out[72]: True
 
-In [73]: len(password) < 20                                                                                      
+In [73]: len(username) < 20                                                                                      
 Out[73]: True
 
 In [74]: username != password                                                                                    
 Out[74]: True
 
 ### Final code for password verification
-In [79]: is_valid = (len(username) > 5) and (len(password) < 20) and username != password                        
+In [79]: is_valid = (len(password) > 5) and (len(username) < 20) and username != password                        
 
 In [80]: print(is_valid)                                                                                         
 True
