@@ -137,32 +137,32 @@ TypeError                                 Traceback (most recent call last)
 TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
 
 ### Movie Rental Scenario
-In [35]: a = 3                                                                                                   
+In [35]: Mermaid = 3                                                                                                   
 
-In [36]: b = 5                                                                                                   
+In [36]: Bear = 5                                                                                                   
 
-In [37]: c = 1                                                                                                   
+In [37]: Hercules = 1                                                                                                   
 
-In [38]: n = 3                                                                                                   
+In [38]: Days = 3                                                                                                   
 
-In [39]: (a * n) + (b * n) + (c * n)                                                                             
+In [39]: (Mermaid * Days) + (Bear * Days) + (Hercules * Days)                                                                             
 Out[39]: 27
 
 ## Company Scenario
-In [40]: g = 400                                                                                                 
+In [40]: Google = 400                                                                                                 
 
-In [41]: a = 380                                                                                                 
+In [41]: Amazon = 380                                                                                                 
 
-In [42]: f = 350                                                                                                 
+In [42]: Facebook = 350                                                                                                 
 
-In [43]: x = 10                                                                                                  
+In [43]: FB_Hours = 10                                                                                                  
 
-In [44]: y = 6                                                                                                   
+In [44]: G_Hours = 6                                                                                                   
 
-In [45]: z = 4                                                                                                   
+In [45]: A_Hours = 4                                                                                                   
 
-In [46]: (f * x) + (g * y) + (x * z)                                                                             
-Out[46]: 5940
+In [46]: (Facebook * FB_Hours) + (Google * G_Hours) + (Amazon * A_Hours)                                                                             
+Out[46]: 7420
 
 ###Class enrollment scenario
 
@@ -188,3 +188,30 @@ In [54]: can_apply_offer = (standard_member and bought_two_items) or premium_mem
 In [55]: print(can_apply_offer)                                                                                  
 True
 
+## Password Scenario
+
+In [70]: username = 'codeup'                                                                                     
+
+In [71]: password = 'notastrongpassword'                                                                         
+
+In [72]: len(username) > 5                                                                                       
+Out[72]: True
+
+In [73]: len(password) < 20                                                                                      
+Out[73]: True
+
+In [74]: username != password                                                                                    
+Out[74]: True
+
+### Final code for password verification
+In [79]: is_valid = (len(username) > 5) and (len(password) < 20) and username != password                        
+
+In [80]: print(is_valid)                                                                                         
+True
+
+## Bonus
+In [82]: username.strip(' ')                                                                                     
+Out[82]: 'codeup'
+
+In [83]: password.strip(' ')                                                                                     
+Out[83]: 'notastrongpassword'
