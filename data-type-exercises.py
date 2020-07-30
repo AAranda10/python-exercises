@@ -135,3 +135,56 @@ TypeError                                 Traceback (most recent call last)
 ----> 1 {} + {}
 
 TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
+
+### Movie Rental Scenario
+In [35]: a = 3                                                                                                   
+
+In [36]: b = 5                                                                                                   
+
+In [37]: c = 1                                                                                                   
+
+In [38]: n = 3                                                                                                   
+
+In [39]: (a * n) + (b * n) + (c * n)                                                                             
+Out[39]: 27
+
+## Company Scenario
+In [40]: g = 400                                                                                                 
+
+In [41]: a = 380                                                                                                 
+
+In [42]: f = 350                                                                                                 
+
+In [43]: x = 10                                                                                                  
+
+In [44]: y = 6                                                                                                   
+
+In [45]: z = 4                                                                                                   
+
+In [46]: (f * x) + (g * y) + (x * z)                                                                             
+Out[46]: 5940
+
+###Class enrollment scenario
+
+In [47]: class_not_full = True                                                                                   
+
+In [48]: no_schedule_conflict= True                                                                              
+
+In [49]: can_enroll = class_not_full and no_schedule_conflict                                                    
+
+In [50]: print(can_enroll)                                                                                       
+True
+
+###Coupon Scenario
+
+In [51]: standard_member = True                                                                                  
+
+In [52]: bought_two_items = True                                                                                 
+
+In [53]: premium_member = False                                                                                  
+
+In [54]: can_apply_offer = (standard_member and bought_two_items) or premium_member                              
+
+In [55]: print(can_apply_offer)                                                                                  
+True
+
